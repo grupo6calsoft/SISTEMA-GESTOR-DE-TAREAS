@@ -5,13 +5,9 @@ import datetime
 
 class Tarea:
     def __init__(self, titulo, descripcion, fecha_limite):
-        self.titulo = titulo
-        self.descripcion = descripcion
-        self.fecha_limite = datetime.datetime.strptime(fecha_limite, "%Y-%m-%d").date()
-        self.estado = "Pendiente"
-        self.responsables = []
-
-    def asignar_tarea(self, miembro):
+        self.titulo = tituloself.descripcion = descripcion
+        self.fecha_limite = datetime.datetime.strptime(fecha_limite, "%Y-%m-%d").date()self.estado = "Pendiente"
+        self.responsables = []def asignar_tarea(self, miembro):
         self.responsables.append(miembro)
 
     def actualizar_estado(self, estado):
